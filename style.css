@@ -1,0 +1,9 @@
+body {
+	background-image: url(./images/winter2608171280.jpg);
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-position: center center;
+	background-size: cover;
+	margin: 0;
+	font-family: 'Roboto', sans-serif;
+}
