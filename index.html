@@ -1,14 +1,56 @@
 <!DOCTYPE html>
 <html>
+
 <head>
 	<meta charset="utf-8" />
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>Page Title</title>
+	<title>Rock,Paper,Scissors Game | By Nwabuokei Nnamdi</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="stylesheet" type="text/css" media="screen" href="main.css" />
-	<script src="main.js"></script>
+	<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU"
+	 crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" media="screen" href="style.css" />
+
 </head>
+
 <body>
-	
+
+	<!-- Trigger/Open The Modal -->
+	<button id="myBtn"><abbr title="Help"><i class="fas fa-question-circle fa-2x" id="help-btn"></i></abbr></button>
+
+	<!-- The Modal -->
+	<div id="myModal" class="modal">
+
+		<!-- Modal content -->
+		<div class="modal-content">
+			<div class="modal-header">
+				<span class="close">&times;</span>
+				<h1>Rules of the Game</h1>
+			</div>
+			<div class="modal-body">
+				<p><a href="https://en.wikipedia.org/wiki/Rock%E2%80%93paper%E2%80%93scissors" target="_blank">Rock-paper-scissors</a>
+					is a game performed with the hands and
+					opposing one or more players.<br> In general, the stone beats
+					the scissors (by blunting them), the scissors beat the leaf
+					(by cutting it), the leaf beats the stone (by wrapping it).</p>
+				<h2>How to play</h2>
+				<p> Here the player opposes the computer for 5 rounds, in the end
+					if the player gets a score higher than that of the computer
+					he wins, if the score is lower then he loses.<br>
+					In order to play you have to make a choice by clicking on one
+					of the three buttons.
+					<br>
+					At the end of the 5 rounds, if the player wants to redo a
+					game just click on <span>Play again</span></p>
+			</div>
+			<div class="modal-footer">
+				<h5>&copy; Nwabuokei Nnamdi Rock-Paper-Scissors Game 2018</h5>
+			</div>
+		</div>
+
+	</div>
+
+	<script src="script.js"></script>
 </body>
+
 </html>
