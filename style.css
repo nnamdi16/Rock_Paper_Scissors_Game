@@ -168,6 +168,27 @@ body {
 	line-height: 3em;
 }
 
+.result-display>h1 {
+	margin: 0;
+	text-decoration-style: none;
+}
+
+.result-display>h1>a {
+	text-decoration: none;
+	color: #6d60c4;
+	font-size: 0.5em;
+}
+
+.result-display>p {
+	text-align: left;
+	padding: 5px;
+}
+
+.result-display>p>span {
+	color: #6d60c4;
+	font-weight: bold;
+}
+
 .finalScore-display {
 	position: fixed;
 	bottom: 30px;
