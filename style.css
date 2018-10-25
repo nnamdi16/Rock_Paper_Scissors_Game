@@ -168,6 +168,27 @@ body {
 	line-height: 3em;
 }
 
+.result-display>h1 {
+	margin: 0;
+	text-decoration-style: none;
+}
+
+.result-display>h1>a {
+	text-decoration: none;
+	color: #6d60c4;
+	font-size: 0.5em;
+}
+
+.result-display>p {
+	text-align: left;
+	padding: 5px;
+}
+
+.result-display>p>span {
+	color: #6d60c4;
+	font-weight: bold;
+}
+
 .finalScore-display {
 	position: fixed;
 	bottom: 30px;
@@ -196,7 +217,8 @@ body {
 	padding: 1em;
 }
 
-.playAgain-btn {
+
+#playAgain-btn {
 	background: #18242f;
 	background: -webkit-linear-gradient(#3d85c6, #18242f 50%, #3d85c6);
 	background: linear-gradient(#3d85c6, #18242f 50%, #3d85c6);
@@ -207,4 +229,17 @@ body {
 	font: normal 700 26px/1 "Calibri", sans-serif;
 	text-align: center;
 	text-shadow: 1px 1px #000000;
+	position: fixed;
+	bottom: 30px;
+	left: 20px;
+}
+
+#playAgain-btn:hover {
+	background: #18242f;
+	background: -webkit-linear-gradient(#3d85c6, #18242f 50%, #3d85c6);
+	background: linear-gradient(#3d85c6, #18242f 50%, #3d85c6);
+}
+
+#playAgain-txt {
+	margin: 0;
 }
