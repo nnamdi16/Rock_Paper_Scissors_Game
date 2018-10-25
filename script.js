@@ -202,3 +202,37 @@ function displayFinalScore(){
 
 	return finalScoreDisplay;
 }
+
+// 5 round Game Function
+
+function gameFinalResult(){
+	if(playerScore>computerScore){
+		return 'You are the Winner !!!';
+	} else if (playerScore > computerScore){
+		return 'You loose !!'
+	}else return 'You had a tie!!'
+}
+
+
+function game(e){
+	let playerSelect = playersPlay(e);
+	let computerSelect = computerPlay();
+
+	displayRound();
+	displaySelection(playerSelect,computerSelect);
+	console.log(oneplayRound(playerSelect,computerSelect));
+	displayRoundScore();
+	round++;
+
+	if(rpund === 7){
+		stopGame();
+	}
+}
+
+function info(){
+	let info = document.querySelector('.result-display');
+	console.log(info);
+	info.classList.toggle('hide');
+}
+
+startGame();
