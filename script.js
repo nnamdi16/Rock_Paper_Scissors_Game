@@ -57,5 +57,28 @@ const stop = () =>{
 }
 
 const replay = () =>{
-	let replayBtn = document.querySelector('')
+	let replayBtn = document.querySelector('#playAgain-btn');
+	let replayText = document.querySelector('#playAgain-txt');
+	if(replayText === null){
+		replayText = document.createElement('p');
+		replayText.setAttribute('id', 'playAgain-txt');
+		replayText.textContent = "Replay"
+	}
+
+	if(replayBtn === null){
+		replayBtn = document.createElement('div');
+		replayBtn.setAttribute('id', 'playAgain-btn');
+		replayBtn.appendChild(replayText);
+		document.querySelector('body').appendChild(replayBtn);
+	}else replayBtn.style.display = '';
+
+	replayBtn.addEventListener('click', ()=>{
+		startGame();
+		displayFinalScore().style.display ="none";
+		replayBtn.style.display = 'none';
+		playerDisplay.textContent = '';
+		computerDisplay.textContent ='';
+		displayRound().textContent = '';
+		displayRoundScore().textContent = '';
+	});
 }
