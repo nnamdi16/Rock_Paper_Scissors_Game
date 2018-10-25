@@ -128,3 +128,40 @@ function playersPlay(e){
 }
 
 
+
+function oneplayRound(playerSelection,computerSelection){
+	if(playerSelection === 'paper'){
+		switch(computerSelection){
+			case 'rock':
+				playerScore++;
+				return 'You win! Paper beats Rock';
+			case 'scissors':
+				computerScore++;
+				return 'You loose ! Scissors beats Paper';
+			case 'paper':
+				return 'It\'s a tie';
+		}
+	}else if(playerSelection === 'rock'){
+		switch(computerSelection){
+			case 'paper':
+			computerScore++;
+				return 'You loose ! Paper beats Rock';
+			case 'scissors':
+				playerScore++;
+				return 'You win ! Rock beats Scissors';
+			case 'rock':
+				return 'It\'s a tie';
+		}
+	}else if(playerSelection === 'scissors'){
+		switch(computerSelection){
+			case 'paper':
+			playerScore++;
+				return 'You win! Scissors beats Paper';
+			case 'rock':
+				computerScore++;
+				return 'You loose ! Rock beats Scissors';
+			case 'scissors':
+				return 'It\'s a tie';
+		}
+	}else console.error("There is an error!");
+}
