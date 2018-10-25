@@ -128,6 +128,7 @@ function playersPlay(e){
 }
 
 
+/* One play Round */
 
 function oneplayRound(playerSelection,computerSelection){
 	if(playerSelection === 'paper'){
@@ -164,4 +165,40 @@ function oneplayRound(playerSelection,computerSelection){
 				return 'It\'s a tie';
 		}
 	}else console.error("There is an error!");
+}
+
+//Result Display
+function displayRound(){
+	let gameround = document.querySelector('.round-display');
+	gameround.textContent = `Round: ${round}`;
+	return gameround;
+}
+
+
+function displaySelection(playerSelection,computerSelection){
+	let gameSelection = document.querySelector('.selection-display');
+	playerDisplay.textContent = `Player: ${playerSelection}`;
+	computerDisplay.textContent = `Computer: ${computerSelection}`;
+	gameSelection.appendChild(playerDisplay);
+	gameSelection.appendChild(computerDisplay);
+}
+
+function displayRoundScore(){
+	let roundScore = document.querySelector('.score-display');
+	roundScore.textContent = `Score : Player = ${playerscore}  Computer = ${computerScore}`;
+	
+	return roundScore;
+}
+
+function displayFinalScore(){
+	let finalScoreDisplay = document.querySelector('.finalScore-display');
+	let finalScore = document.querySelector('#resultText');
+	if(para === null){
+		para = document.createElement('p');
+		para.setAttribute('id', 'resultText');
+	}
+	finalScore.textContent = gameFinalResult();
+	finalScoreDisplay.appendChild(finalScore);
+
+	return finalScoreDisplay;
 }
