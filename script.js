@@ -44,7 +44,7 @@ const startGame = () => {
 	return gameButtons;
 }
 
-const stop = () =>{
+const stopGame = () =>{
 	startGame().forEach(button=>{
 		btn.removeEventListener('click',game);
 	});
