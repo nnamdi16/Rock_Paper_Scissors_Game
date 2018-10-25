@@ -24,3 +24,38 @@ window.onclick = function(event) {
         modal.style.display = "none";
     }
 }
+
+
+//Game logic
+
+let playerScore = 0;
+let computerScore = 0;
+let round = 1;
+let playerDisplay = document.createElement('p');
+let computerDisplay = document.createElement('p');
+
+// Game start function
+const startGame = () => {
+	const gameButtons = document.querySelectorAll('.btn');
+	console.log(gameButtons.length);
+	gameButtons.forEach(button =>{
+		button.addEventListener('click', game)
+	});
+	return gameButtons;
+}
+
+const stop = () =>{
+	startGame().forEach(button=>{
+		btn.removeEventListener('click',game);
+	});
+	displayFinalScore().style.display ="";
+	replay();
+	round = 1;
+	playerScore = 0;
+	computerScore =0;
+
+}
+
+const replay = () =>{
+	let replayBtn = document.querySelector('')
+}
