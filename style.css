@@ -195,3 +195,16 @@ body {
 	margin: 0;
 	padding: 1em;
 }
+
+.playAgain-btn {
+	background: #18242f;
+	background: -webkit-linear-gradient(#3d85c6, #18242f 50%, #3d85c6);
+	background: linear-gradient(#3d85c6, #18242f 50%, #3d85c6);
+	border-radius: 1000px;
+	padding: 11px 21px;
+	color: #ffffff;
+	display: inline-block;
+	font: normal 700 26px/1 "Calibri", sans-serif;
+	text-align: center;
+	text-shadow: 1px 1px #000000;
+}
