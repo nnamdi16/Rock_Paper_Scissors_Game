@@ -196,7 +196,7 @@ body {
 	padding: 1em;
 }
 
-.playAgain-btn {
+#playAgain-btn {
 	background: #18242f;
 	background: -webkit-linear-gradient(#3d85c6, #18242f 50%, #3d85c6);
 	background: linear-gradient(#3d85c6, #18242f 50%, #3d85c6);
@@ -212,12 +212,12 @@ body {
 	left: 20px;
 }
 
-.playAgain-btn:hover {
+#playAgain-btn:hover {
 	background: #18242f;
 	background: -webkit-linear-gradient(#3d85c6, #18242f 50%, #3d85c6);
 	background: linear-gradient(#3d85c6, #18242f 50%, #3d85c6);
 }
 
-.playAgain-txt {
+#playAgain-txt {
 	margin: 0;
 }
