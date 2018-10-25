@@ -35,8 +35,8 @@ let playerDisplay = document.createElement('p');
 let computerDisplay = document.createElement('p');
 
 // Game start function
-const startGame = () => {
-	const gameButtons = document.querySelectorAll('.btn');
+function startGame() {
+	const gameButtons = document.querySelectorAll('.game-images');
 	console.log(gameButtons.length);
 	gameButtons.forEach(button =>{
 		button.addEventListener('click', game)
@@ -185,7 +185,7 @@ function displaySelection(playerSelection,computerSelection){
 
 function displayRoundScore(){
 	let roundScore = document.querySelector('.score-display');
-	roundScore.textContent = `Score : Player = ${playerscore}  Computer = ${computerScore}`;
+	roundScore.textContent = `Score : Player = ${playerScore}  Computer = ${computerScore}`;
 	
 	return roundScore;
 }
@@ -193,9 +193,9 @@ function displayRoundScore(){
 function displayFinalScore(){
 	let finalScoreDisplay = document.querySelector('.finalScore-display');
 	let finalScore = document.querySelector('#resultText');
-	if(para === null){
-		para = document.createElement('p');
-		para.setAttribute('id', 'resultText');
+	if(finalScore === null){
+		finalScore = document.createElement('p');
+		finalScore.setAttribute('id', 'resultText');
 	}
 	finalScore.textContent = gameFinalResult();
 	finalScoreDisplay.appendChild(finalScore);
@@ -224,7 +224,7 @@ function game(e){
 	displayRoundScore();
 	round++;
 
-	if(rpund === 7){
+	if(round === 7){
 		stopGame();
 	}
 }
