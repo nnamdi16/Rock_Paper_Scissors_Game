@@ -108,3 +108,23 @@ function computerPlay(){
 }
 
 
+// Player's play logic
+
+function playersPlay(e){
+	console.log(e.target);
+	const buttonId = e.target.getAttribute('id');
+	switch(buttonId){
+		case "btn-rock":
+			return "rock";
+		case "btn-paper":
+			return "paper";
+		case "btn-scissors":
+			return "scissors";
+		default:
+		console.error("Not reaching targeted button's id");
+		alert('Error, Please refresh page');
+		break;
+	}
+}
+
+
