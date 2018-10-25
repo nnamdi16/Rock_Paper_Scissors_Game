@@ -82,3 +82,29 @@ const replay = () =>{
 		displayRoundScore().textContent = '';
 	});
 }
+
+// Computer play logic
+
+function getRandomNumber(min,max){
+	min = Math.ceil(min);
+	max = Math.floor(max);
+	return Math.floor(Math.random() * (max-min+1)) + min;
+}
+
+function computerPlay(){
+	let computerChoice = getRandomNumber(0,2);
+	switch(computerChoice){
+		case 0:
+			return "rock";
+		case 1:
+			return "paper";
+		case 2:
+			return "scissors";
+		default:
+			console.error("There is an error!");
+			alert("There is an error! Refresh the game.")
+			break;
+	}
+}
+
+
