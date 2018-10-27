@@ -229,10 +229,10 @@ function game(e){
 	}
 }
 
-function info(){
-	let info = document.querySelector('.result-display');
-	console.log(info);
-	info.classList.toggle('hide');
-}
+// function info(){
+// 	let info = document.querySelector('.result-display');
+// 	console.log(info);
+// 	info.classList.toggle('hide');
+// }
 
 startGame();
