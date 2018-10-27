@@ -161,7 +161,9 @@ body {
   text-align: center;
   line-height: 2em;
   position: relative;
-  top: -70px;
+  top: -35px;
+  left: -40px;
+  font-size: 1.1em;
 }
 
 .result-display > h1 {
@@ -178,6 +180,8 @@ body {
 .result-display > p {
   text-align: left;
   padding: 5px;
+  position: relative;
+  left: 20px;
 }
 
 .result-display > p > span {
@@ -185,9 +189,15 @@ body {
   font-weight: bold;
 }
 
+.round-display {
+  position: relative;
+  top: 5px;
+  font-weight: bolder;
+}
+
 .finalScore-display {
   position: relative;
-  top: -720px;
+  top: -750px;
   bottom: 30px;
   left: 70%;
   width: 30%;
@@ -197,6 +207,7 @@ body {
   box-shadow: inset -1px 3px 26px 1px rgba(73, 83, 148, 0.67);
   background-color: rgba(240, 233, 233, 0.746);
   text-align: center;
+  font-weight: bolder;
 }
 
 .finalScore-display > p {
@@ -204,6 +215,11 @@ body {
   font-weight: bold;
   margin: 0;
   padding: 1em;
+}
+
+
+.score-display {
+  font-weight: bolder;
 }
 
 

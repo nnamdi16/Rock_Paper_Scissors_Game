@@ -185,7 +185,7 @@ function displaySelection(playerSelection,computerSelection){
 
 function displayRoundScore(){
 	let roundScore = document.querySelector('.score-display');
-	roundScore.textContent = `Score : Player = ${playerScore}  Computer = ${computerScore}`;
+	roundScore.textContent = `Score : Player = ${playerScore}    Computer = ${computerScore}`;
 	
 	return roundScore;
 }
@@ -224,7 +224,7 @@ function game(e){
 	displayRoundScore();
 	round++;
 
-	if(round === 7){
+	if(round === 10){
 		stopGame();
 	}
 }
