@@ -217,9 +217,11 @@ body {
   padding: 1em;
 }
 
+
 .score-display {
   font-weight: bolder;
 }
+
 
 #playAgain-btn {
   background: #18242f;
