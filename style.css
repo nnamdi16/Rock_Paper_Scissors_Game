@@ -253,3 +253,88 @@ body {
 .hide {
   display: none;
 }
+
+@media only screen and (min-width : 375px) and (max-width : 414px) {
+  body {
+    overflow-y: hidden;
+
+  }
+
+  .game-images {
+    display: flex;
+    flex-direction: column;
+  }
+
+  #btn-rock {
+    margin-left: 60px;
+  }
+
+  #btn-paper {
+    margin-left: 60px;
+  }
+
+  #btn-scissors {
+    margin-left: 60px;
+  }
+
+  #header_title {
+    margin-left: 40px;
+  }
+
+  .result-display {
+    width: 300px;
+    left: 10px;
+    top: 5px;
+  }
+
+  .finalScore-display {
+    top: -1340px;
+    width: 60%;
+    left: 35%;
+  }
+
+
+}
+
+
+@media only screen and (min-width : 320px) and (max-width : 360px) {
+  body {
+    overflow-y: hidden;
+
+  }
+
+  .game-images {
+    display: flex;
+    flex-direction: column;
+  }
+
+  #btn-rock {
+    margin-left: 60px;
+  }
+
+  #btn-paper {
+    margin-left: 60px;
+  }
+
+  #btn-scissors {
+    margin-left: 60px;
+  }
+
+  #header_title {
+    margin-left: 40px;
+  }
+
+  .result-display {
+    width: 300px;
+    left: 20px;
+    top: 5px;
+  }
+
+  .finalScore-display {
+    top: -1340px;
+    width: 60%;
+    left: 35%;
+  }
+
+
+}
