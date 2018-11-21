@@ -131,6 +131,7 @@ body {
 .header {
   text-align: center;
 }
+
 .header h1 {
   margin: 0;
 }
@@ -161,30 +162,30 @@ body {
   text-align: center;
   line-height: 2em;
   position: relative;
-  top: -35px;
+  top: -70px;
   left: -40px;
   font-size: 1.1em;
 }
 
-.result-display > h1 {
+.result-display>h1 {
   margin: 0;
   text-decoration-style: none;
 }
 
-.result-display > h1 > a {
+.result-display>h1>a {
   text-decoration: none;
   color: #6d60c4;
   font-size: 0.5em;
 }
 
-.result-display > p {
+.result-display>p {
   text-align: left;
   padding: 5px;
   position: relative;
   left: 20px;
 }
 
-.result-display > p > span {
+.result-display>p>span {
   color: #6d60c4;
   font-weight: bold;
 }
@@ -210,7 +211,7 @@ body {
   font-weight: bolder;
 }
 
-.finalScore-display > p {
+.finalScore-display>p {
   font-size: 2em;
   font-weight: bold;
   margin: 0;
